@@ -1,0 +1,104 @@
+print(''' 𝓠𝓤𝓘𝓩 𝓒𝓗𝓐𝓛𝓛𝓔𝓝𝓖𝓔𝓡
+          1. Automobiles
+          2. Sports
+          3. Health\n''')
+
+print("Choose any one of the above topic for quiz.\n")
+
+
+# a = input("Enter the topic: ").lower()
+def Automobiles():
+    import random
+    auto = ["What year was the first car invented? ", "Who invented the first car?",
+            "What fuel was used for the first car? "]
+    n = 1
+    auto1 = random.choices(auto,k=n)
+    auto2 = ' '.join(auto1)
+    print(auto2)
+    # auto_check =
+    if auto2 == "What year was the first car invented? ":
+        # auto_check = 0
+        auto_check = int(input("Enter your answer: "))
+        if auto_check == 1885:
+            print("Correct answer!")
+        else:
+            print("Oops! It's 1885, BETTER LUCK NEXT TIME!")
+    elif auto2 == "Who invented the first car?":
+        auto_check = input("Enter the name: ").lower()
+        if auto_check == "karl benz":
+            print("WOW! You got it right!")
+        else:
+            print("OOPS! It's Karl benz")
+    else:
+        auto_check = input("Enter the fuel type: ").lower()
+        if auto_check == "gas":
+            print("WOW! You got it right!")
+        else:
+            print("OOPS! It's GAS.")
+
+def Sports():
+    import random
+    auto = ["When was the first cricket club established in India? ", "Who is the current President of the International Olympic Committee?",
+            "What fuel was used for the first car? "]
+    n = 1
+    auto1 = random.choices(auto,k=n)
+    auto2 = ' '.join(auto1)
+    print(auto2)
+    # auto_check =
+    if auto2 == "When was the first cricket club established in India? ":
+        # auto_check = 0
+        auto_check = int(input("Enter your answer: "))
+        if auto_check == 1792:
+            print("Correct answer!")
+        else:
+            print("Oops! It's 1792, BETTER LUCK NEXT TIME!")
+    elif auto2 == "Who is the current President of the International Olympic Committee?":
+        auto_check = input("Enter the name: ").lower()
+        if auto_check == "Thomas Bach":
+            print("WOW! You got it right!")
+        else:
+            print("OOPS! It's Thomas Bach")
+    else:
+        auto_check = input("How many team members are there in each team of a cricket game?: ").lower()
+        if auto_check == "11":
+            print("WOW! You got it right!")
+        else:
+            print("OOPS! It's 11.")
+def Health():
+    import random
+    auto = ["Which nutrient is responsible for building and repairing body tissues? ", "Which of the following is a good source of vitamin C?",
+            "What is the average recommended sleep duration for adults? "]
+    n = 1
+    auto1 = random.choices(auto,k=n)
+    auto2 = ' '.join(auto1)
+    print(auto2)
+    # auto_check =
+    if auto2 == "Which nutrient is responsible for building and repairing body tissues? ":
+        # auto_check = 0
+        auto_check = int(input("Enter your answer: "))
+        if auto_check == Proteins:
+            print("Correct answer!")
+        else:
+            print("Oops! It's Proteins, BETTER LUCK NEXT TIME!")
+    elif auto2 == "Which of the following is a good source of vitamin C?":
+        auto_check = input("Enter the answer: ").lower()
+        if auto_check == "Oranges":
+            print("WOW! You got it right!")
+        else:
+            print("OOPS! It's Oranges")
+    else:
+        auto_check = input("Enter the answer: ").lower()
+        if auto_check == "8":
+            print("WOW! You got it right!")
+
+
+
+a = input("Enter the topic: ").lower()
+if a == "automobiles":
+    Automobiles()
+elif a == "sports":
+          sports()
+elif a == "health":
+          health()
+else :
+          print("enter a valid topic")
