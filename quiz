@@ -97,8 +97,8 @@ a = input("Enter the topic: ").lower()
 if a == "automobiles":
     Automobiles()
 elif a == "sports":
-          sports()
+          Sports()
 elif a == "health":
-          health()
+          Health()
 else :
           print("enter a valid topic")
